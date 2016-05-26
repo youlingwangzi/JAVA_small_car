@@ -64,7 +64,6 @@ class CarPane extends Pane {
   private Circle c2 = new Circle(baseX + 35, baseY - 5, 5);
     
   private Rectangle carBody = new Rectangle(baseX, baseY - 20, 50, 10);
-  //private Text text = new Text(baseX-20,baseY - 50,"王树林和刘昊来的\n超级无敌小轿车");
   private Polygon polygon = new Polygon();
     ObservableList<Double> list = polygon.getPoints();
   
@@ -80,7 +79,6 @@ class CarPane extends Pane {
     list.add(baseY-20);
     polygon.setFill(Color.RED);
     this.getChildren().addAll(c1, c2, carBody, polygon);
-    //this.getChildren().add(text);
   }
   
   public void move() {
@@ -106,8 +104,6 @@ class CarPane extends Pane {
     c1.setCenterY(baseY - 5);
     c2.setCenterX(baseX + 35);
     c2.setCenterY(baseY - 5);
-/*    text.setX(baseX-20);
-    text.setY(baseY - 50);*/
 
     carBody.setX(baseX);
     carBody.setY(baseY - 20);
